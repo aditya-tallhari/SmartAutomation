@@ -23,8 +23,8 @@ public sealed record TestConfiguration(
         return new TestConfiguration(
             Get(values, "url", "SMART_AUTOMATION_URL",
                 "https://app.cloudqa.io/home/AutomationPracticeForm"),
-            Get(values, "first-name", "SMART_AUTOMATION_FIRST_NAME", "Ada"),
-            Get(values, "gender", "SMART_AUTOMATION_GENDER", "Female"),
+            Get(values, "first-name", "SMART_AUTOMATION_FIRST_NAME", "Aditya"),
+            Get(values, "gender", "SMART_AUTOMATION_GENDER", "Male"),
             Get(values, "state", "SMART_AUTOMATION_STATE", "India"));
     }
 

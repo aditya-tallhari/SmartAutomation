@@ -36,15 +36,15 @@ Selenium Manager downloads a compatible ChromeDriver when the application starts
 All values have defaults for the CloudQA assignment page:
 
 ```powershell
-dotnet run -- --url "https://app.cloudqa.io/home/AutomationPracticeForm" --first-name "Ada" --gender "Female" --state "India"
+dotnet run -- --url "https://app.cloudqa.io/home/AutomationPracticeForm" --first-name "Aditya" --gender "Male" --state "India"
 ```
 
 The URL is passed to Selenium at runtime and is not embedded in the locator logic. The same values can be supplied through environment variables:
 
 ```powershell
 $env:SMART_AUTOMATION_URL = "https://example.test/form"
-$env:SMART_AUTOMATION_FIRST_NAME = "Ada"
-$env:SMART_AUTOMATION_GENDER = "Female"
+$env:SMART_AUTOMATION_FIRST_NAME = "Aditya"
+$env:SMART_AUTOMATION_GENDER = "Male"
 $env:SMART_AUTOMATION_STATE = "India"
 dotnet run
 ```
@@ -84,7 +84,7 @@ Browser: Chrome
 [PASS] First Name identified
 [PASS] First Name entered
 [PASS] First Name verified
-[PASS] Gender option identified: Female
+[PASS] Gender option identified: Male
 [PASS] Gender selected
 [PASS] Gender verified
 [PASS] State dropdown identified
@@ -104,7 +104,7 @@ The project has been restored, compiled, and run successfully against the live C
 
 ```powershell
 dotnet build
-dotnet run -- --url "https://app.cloudqa.io/home/AutomationPracticeForm" --first-name "Ada" --gender "Female" --state "India"
+dotnet run -- --url "https://app.cloudqa.io/home/AutomationPracticeForm" --first-name "Aditya" --gender "Male" --state "India"
 ```
 
 The observed live result was `Overall Result: PASS`. The live test requires Chrome and network access, so its result depends on the current CloudQA page.
